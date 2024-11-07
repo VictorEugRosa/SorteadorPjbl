@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
-import java.util.ArrayList;
 import java.util.Set; 
 
 public class SorteadorApp extends JFrame {
@@ -184,7 +183,7 @@ public class SorteadorApp extends JFrame {
                 List<String> resultado = sorteadorPalavras.sortearPalavras(quantidade);
                 resultArea.append("Resultado: " + resultado.toString() + "\n");
             } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(palavrasFrame, "Digite um número válido.");
+                JOptionPane.showMessageDialog(palavrasFrame, "operação cancelada.");
             }
         });
 
